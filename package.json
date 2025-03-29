@@ -1,0 +1,22 @@
+{
+  "name": "nodejs_full",
+  "version": "1.0.0",
+  "description": "Estudo API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leonardosoliveira/NodeJs.git"
+  },
+  "author": "Leonardo Oliveira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leonardosoliveira/NodeJs/issues"
+  },
+  "homepage": "https://github.com/leonardosoliveira/NodeJs#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
