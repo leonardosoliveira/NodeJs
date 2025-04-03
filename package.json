@@ -4,7 +4,8 @@
   "description": "Estudo API",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node --watch index.js",
+    "test": "jest test/* --coverage"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,10 @@
   },
   "homepage": "https://github.com/leonardosoliveira/NodeJs#readme",
   "dependencies": {
+    "body-parser": "^2.2.0",
     "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
   }
 }

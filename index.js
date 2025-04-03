@@ -1,19 +1,10 @@
-const express = require('express');
-const { apiSomar, apiSubtrair, apiDivisao, apiMulti} = require('./api/operacoes');
-
+const express = require("express");
 const app = express();
-const port = 9090;
+const routers = require("./src/routes/pessoa")
 
-app.use(express.json())
+app.use(express.json());
+app.use(routers);
 
-app.post('/somar', apiSomar);
-
-app.post('/sub', apiSubtrair);
-
-app.post('/divisao', apiDivisao);
-
-app.post('/multi', apiMulti);
-
-app.listen(port, () => {
-    console.log('servidor rodando na porta ' + port);
+app.listen(3000, () => {
+    console.log('Servidor rodando na porta 3000')
 });
